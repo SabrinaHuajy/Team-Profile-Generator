@@ -6,7 +6,7 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "teamprofile.html");
 
 const render = require("./src/page-template.js");
 
@@ -44,7 +44,7 @@ function managerQuestion() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'What is the name of the teams manager?',
+            message: 'Please enter name of the teams manager!',
             name: 'mName',
             validate: (mName) => {
                 if (mName) {
@@ -93,7 +93,7 @@ function managerQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the manager's office number");
+                    console.log("Please enter the manager's office number!");
                     return false;
                 }
             }
@@ -130,7 +130,7 @@ function engineerQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's ID");
+                    console.log("Please enter the Engineer's ID!");
                     return false;
                 }
             }
@@ -144,7 +144,7 @@ function engineerQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's email");
+                    console.log("Please enter the Engineer's email!");
                     return false;
                 }
             }
@@ -158,7 +158,7 @@ function engineerQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's github username");
+                    console.log("Please enter the Engineer's github username!");
                     return false;
                 }
             }
@@ -195,7 +195,7 @@ function internQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Intern's ID");
+                    console.log("Please enter the Intern's ID!");
                     return false;
                 }
             }
@@ -209,21 +209,21 @@ function internQuestion() {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Intern's email");
+                    console.log("Please enter the Intern's email!");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Intern's school username!",
+            message: "Please enter the institute Intern came from!",
             name: 'school',
             validate: (school) => {
                 if (school) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Intern's school username");
+                    console.log("Please enter the institute Intern came from!");
                     return false;
                 }
             }
@@ -236,8 +236,8 @@ function internQuestion() {
 }
 
 function createTeam() {
-    console.log("Team Proflies created success!")
-    fs.writeFile('../starter/output/team.html', renderTeam(teamArray), function (err) {
+    console.log("Success! Team Profile created.")
+    fs.writeFile('../starter/output/teamprofile.html', renderTeam(teamArray), function (err) {
         if (err) {
             return console.log(err)
         }
