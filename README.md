@@ -51,6 +51,8 @@ This command-line application create classes for each team member and export the
   * Call the `render` function and pass in an array containing all employee objects; 
     * The `render` function will generate and return a block of HTML including templated divs for each employee!
 
+A sample HTML file generated using the application: output\teamprofile.html
+
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
 <img src="assets\screenshot1.png" alt="first screenshot of webpage interface">
