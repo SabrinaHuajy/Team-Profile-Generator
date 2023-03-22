@@ -39,8 +39,9 @@
   color: #000000;
   text-decoration: none;
 }
-.card-header{
- background-color: #007bff; 
+
+.card-header {
+  background-color: #007bff;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

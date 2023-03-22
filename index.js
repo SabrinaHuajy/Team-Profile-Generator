@@ -20,7 +20,7 @@ function run() {
         .prompt([
             {
                 type: 'list',
-                message: "Please choose your employee's role!",
+                message: "Choose employee's role:",
                 name: 'role',
                 choices: ['Manager', 'Engineer', 'Intern', 'No More Members'],
             },
@@ -34,7 +34,7 @@ function run() {
             else if (inputs.role === 'Intern') {
                 internQuestion();
             }
-            else if (inputs.role === 'No More Members') {
+            else if (inputs.role === 'Others') {
                 createTeam();
             }
         })
@@ -44,56 +44,56 @@ function managerQuestion() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Please enter name of the teams manager!',
+            message: 'Name of the teams manager:',
             name: 'mName',
             validate: (mName) => {
                 if (mName) {
                     return true;
                 }
                 else {
-                    console.log('Please enter name of the teams manager!');
+                    console.log('Name of the teams manager:');
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the manager's ID!",
+            message: "The manager's ID:",
             name: 'mID',
             validate: (mID) => {
                 if (mID) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the manager's ID!");
+                    console.log("The manager's ID:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the manager's email!",
+            message: "The manager's email:",
             name: 'mEmail',
             validate: (mEmail) => {
                 if (mEmail) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the manager's email!");
+                    console.log("The manager's email:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the manager's office number!",
+            message: "The manager's office number:",
             name: 'mOfficeNumber',
             validate: (mOfficeNumber) => {
                 if (mOfficeNumber) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the manager's office number!");
+                    console.log("The manager's office number:");
                     return false;
                 }
             }
@@ -109,56 +109,56 @@ function engineerQuestion() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Please enter the name of the Engineer!',
+            message: 'The name of the Engineer:',
             name: 'eName',
             validate: (eName) => {
                 if (eName) {
                     return true;
                 }
                 else {
-                    console.log('Please enter the name of the Engineer!');
+                    console.log('The name of the Engineer:');
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Engineer's ID!",
+            message: "The Engineer's ID:",
             name: 'eID',
             validate: (eID) => {
                 if (eID) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's ID!");
+                    console.log("The Engineer's ID:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Engineer's email!",
+            message: "The Engineer's email:",
             name: 'eEmail',
             validate: (eEmail) => {
                 if (eEmail) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's email!");
+                    console.log("The Engineer's email:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Engineer's github username!",
+            message: "The Engineer's github username:",
             name: 'github',
             validate: (github) => {
                 if (github) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Engineer's github username!");
+                    console.log("The Engineer's github username:");
                     return false;
                 }
             }
@@ -174,56 +174,56 @@ function internQuestion() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Please enter the name of the Intern!',
+            message: 'The name of the Intern:',
             name: 'iName',
             validate: (iName) => {
                 if (iName) {
                     return true;
                 }
                 else {
-                    console.log('Please enter the name of the Intern!');
+                    console.log('The name of the Intern:');
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Intern's ID!",
+            message: "The Intern's ID:",
             name: 'iID',
             validate: (iID) => {
                 if (iID) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Intern's ID!");
+                    console.log("The Intern's ID:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the Intern's email!",
+            message: "The Intern's email:",
             name: 'iEmail',
             validate: (iEmail) => {
                 if (iEmail) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the Intern's email!");
+                    console.log("The Intern's email:");
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            message: "Please enter the institute Intern came from!",
+            message: "The institute Intern came from:",
             name: 'school',
             validate: (school) => {
                 if (school) {
                     return true;
                 }
                 else {
-                    console.log("Please enter the institute Intern came from!");
+                    console.log("The institute Intern came from:");
                     return false;
                 }
             }
