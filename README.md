@@ -52,3 +52,6 @@ This command-line application create classes for each team member and export the
     * The `render` function will generate and return a block of HTML including templated divs for each employee!
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
+
+<img src="assets\images\screenshot1.PNG" alt="first screenshot of webpage interface">
+<img src="assets\images\screenshot2.PNG" alt="second screenshot of webpage interface">
