@@ -53,5 +53,5 @@ This command-line application create classes for each team member and export the
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-<img src="assets\images\screenshot1.PNG" alt="first screenshot of webpage interface">
-<img src="assets\images\screenshot2.PNG" alt="second screenshot of webpage interface">
+<img src="assets\screenshot1.png" alt="first screenshot of webpage interface">
+<img src="assets\screenshot2.png" alt="second screenshot of webpage interface">
